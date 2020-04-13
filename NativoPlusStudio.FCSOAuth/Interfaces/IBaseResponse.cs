@@ -1,4 +1,4 @@
-﻿namespace NativoPlusStudio.FCSServices
+﻿namespace NativoPlusStudio.FCSOAuth
 {
     public interface IBaseResponse
     {
