@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace NativoPlusStudio.FCSServices
-{
+namespace NativoPlusStudio.FCSOAuth
     public class FicosoOptions
     {
         public string Url { get; set; }
