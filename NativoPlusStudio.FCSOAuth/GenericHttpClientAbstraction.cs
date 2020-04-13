@@ -6,16 +6,16 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NativoPlusStudio.FCSServices
+namespace NativoPlusStudio.FCSOAuth
 {
-    public abstract class GenericHttpClientAbstraction
+    public abstract class GenericHttpClientAbstraction : IGenericHttpClientAbstraction
     {
         private readonly HttpClient _client;
         public GenericHttpClientAbstraction(HttpClient client)
         {
             _client = client;
         }
-        public async Task<TResponse> Get<TResponse>(string endpoint = "", string query = "") where TResponse : IBaseResponse, new()
+        public async Task<TResponse> GetAsync<TResponse>(string endpoint = "", string query = "") where TResponse : IBaseResponse, new()
         {
             var response = await _client
                 .GetAsync($"{endpoint}{query}");

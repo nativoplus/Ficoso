@@ -2,15 +2,13 @@
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
 
-namespace NativoPlusStudio.FCSServices
+namespace NativoPlusStudio.FCSOAuth
 {
     public abstract class HttpOAuthClient
     {
 
         private readonly HttpClient _client;        
         private readonly IFCSToken _tokenHelper;   
-
-
 
         public HttpOAuthClient(IFCSToken tokenHelper)
             
