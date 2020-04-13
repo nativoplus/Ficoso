@@ -4,7 +4,7 @@ using System;
 using System.Net.Http.Headers;
 
 
-namespace NativoPlusStudio.FCSServices
+namespace NativoPlusStudio.FCSOAuth
 {
     public static class AutoRegisterOauth
     {
