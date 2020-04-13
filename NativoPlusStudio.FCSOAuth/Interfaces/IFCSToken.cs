@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace NativoPlusStudio.FCSServices
+namespace NativoPlusStudio.FCSOAuth
 {
     public interface IFCSToken
     {
